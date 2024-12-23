@@ -26,4 +26,8 @@ public class Geometry {
         System.out.println(Point);
         return new Point(x, y);
     }
+    
+    public static double getAreaFourSide(double width, double height) {
+        return width * height;
+    }
 }
