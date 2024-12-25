@@ -1,9 +1,11 @@
 import java.awt.*;
+import java.util.Scanner;
 
 public class Geometry {
     public static void main(String[] args) {
         rectangle();
         findCenter(new Rectangle(0, 0, 50, 100));
+        areaTriangle();
     }
 
     public static double rectangle() {
@@ -30,4 +32,14 @@ public class Geometry {
     public static double getAreaFourSide(double width, double height) {
         return width * height;
     }
+
+    public static double areaTriangle() {
+        Scanner triangle = new Scanner(System.in);
+        System.out.println("Please enter the base of the triangle:  ");
+        double base = triangle.nextDouble();
+        System.out.println("PLease enter the height of the triangle:  ");
+        double height = triangle.nextDouble();
+        return (base * height) / 2;
+    }
+    
 }
