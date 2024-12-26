@@ -41,5 +41,11 @@ public class Geometry {
         double height = triangle.nextDouble();
         return (base * height) / 2;
     }
-    
+
+    public static double areaCircle() {
+        Scanner circle = new Scanner(System.in);
+        System.out.println("Please enter the radius of the circle:  ");
+        double radius = circle.nextDouble();
+        return Math.PI * (radius * radius);
+    }
 }
